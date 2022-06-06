@@ -99,13 +99,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://65.2.37.24:9823/sudeshtech/repository/walmart-releases/</url>
+	      <url>http://65.2.37.24:9823/sudeshtech/repository/walmart-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://65.2.37.24:9823/sudeshtech/repository/walmart-releases/</url>
+	      <url>http://65.2.37.24:9823/sudeshtech/repository/walmart-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
