@@ -37,8 +37,13 @@ node
         {
             sshagent(['a200758e-6add-4264-87fb-92f18560b887'])
             {
-                sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@172.31.32.185:/opt/apache-tomcat-9.0.63/webapps/"
+                sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@172.31.32.185:/opt/apache-tomcat-9.0.63/webapps/" 
             }
+        }
+        
+        stage('TriggerDownstreamjob')
+        {
+            build job: 'pipelinescriptwithbuildparamters'
         }
     }//try closing
    
